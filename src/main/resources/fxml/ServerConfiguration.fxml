@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="281.0" prefWidth="334.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.ServerConfigurationController">
+   <children>
+      <Label layoutX="53.0" layoutY="14.0" prefHeight="54.0" prefWidth="236.0" style="-fx-background-color: blue;" text="Configuration du Serveur" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="adresseip" layoutX="123.0" layoutY="94.0" prefHeight="25.0" prefWidth="166.0" promptText="192.168.0.1" />
+      <Label layoutX="26.0" layoutY="85.0" prefHeight="42.0" prefWidth="90.0" text="Adresse IP:" textFill="#f9f8ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="port" layoutX="123.0" layoutY="136.0" prefHeight="25.0" prefWidth="166.0" promptText="8097" />
+      <Label layoutX="71.0" layoutY="129.0" prefHeight="42.0" prefWidth="46.0" text="Port :" textFill="#f9f8ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="40.0" layoutY="200.0" onAction="#btnStop" prefHeight="42.0" prefWidth="123.0" style="-fx-background-color: red;" text="Stop" textFill="WHITE" />
+      <JFXButton layoutX="171.0" layoutY="200.0" onAction="#btnDemarrer" prefHeight="42.0" prefWidth="123.0" style="-fx-background-color: green;" text="Demarrer" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.tab{
+    -fx-background-color: #1565c0;
+    -fx-pref-width: 200;
+    -fx-pref-height: 50;
+}
+
+.tab-header-background{
+    -fx-background-color: white;
+   -fx-margin-left: 50px;
+}
+
+.btnMenu hover{   -fx-background-color:red;
+}
+.btnPlus{
+    -fx-border-radius:20px ;
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="354.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.DevisController">
+   <children>
+      <ScrollPane layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="745.0">
+         <content>
+            <VBox fx:id="vboxDevis" prefHeight="0.0" prefWidth="0.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <HBox prefHeight="54.0" prefWidth="745.0" style="-fx-background-color: skyblue;">
+         <children>
+            <JFXButton mnemonicParsing="false" prefHeight="54.0" prefWidth="257.0" text="Veuillez spécifier le prix la quantité pour chaque Produit afin de produire un dévis" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#btnDecliner" prefHeight="54.0" prefWidth="144.0" style="-fx-background-color: blue;" text="DECLINER " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icone/warning.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#btnReporter" prefHeight="54.0" prefWidth="192.0" style="-fx-background-color: blue;" text="REPORTER DECISION" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icone/horloge%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#btnQuitter" prefHeight="54.0" prefWidth="139.0" style="-fx-background-color: blue;" text="QUITTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icone/error.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

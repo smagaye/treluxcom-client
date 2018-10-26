@@ -1,0 +1,5 @@
+#body{
+    -fx-background-image:url("../images/caisse.jpg");  
+    -fx-background-size:     cover;                     
+    -fx-background-repeat:   no-repeat;
+}

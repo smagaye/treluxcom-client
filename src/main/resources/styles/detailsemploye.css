@@ -1,0 +1,7 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.paneImage {
+    -fx-background-image: url("/images/shop.jpeg");
+}

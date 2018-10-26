@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="172.0" prefWidth="579.0" style="-fx-background-color: #009688;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="171.0" layoutY="6.0" prefHeight="17.0" prefWidth="140.0" text="12-Mars-1994" textFill="#111010">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="36.0" prefHeight="17.0" prefWidth="242.0" text="Serigne Mouhamadou Bassirou Diaby" textFill="#111010">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="64.0" prefHeight="17.0" prefWidth="250.0" text="Serigne Malick Ada Gaye" textFill="#111010">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="95.0" prefHeight="17.0" prefWidth="27.0" text="123" textFill="#111010">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="128.0" prefHeight="17.0" prefWidth="27.0" text="123" textFill="#111010">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="445.0" layoutY="36.0" prefHeight="17.0" prefWidth="75.0" text="85.67%" textFill="#111010">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="428.0" layoutY="63.0" prefHeight="58.0" prefWidth="79.0">
+         <graphic>
+            <ImageView fitHeight="72.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icone/validation.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="22.0" layoutY="6.0" prefHeight="17.0" prefWidth="140.0" text="Commande passe le :" textFill="#f5f5f5" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="36.0" prefHeight="17.0" prefWidth="91.0" text="Par le gerant :" textFill="#f5f5f5" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="64.0" prefHeight="17.0" prefWidth="148.0" text="Aupres du fournisseur :" textFill="#f5f5f5" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="95.0" prefHeight="17.0" prefWidth="214.0" text="Nombre de produits commandes :" textFill="#f5f5f5" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="128.0" prefHeight="17.0" prefWidth="197.0" text="Nombre de produits disponible :" textFill="#f5f5f5" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="6.0" prefHeight="17.0" prefWidth="214.0" text="Taux de disponibite des produits" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="369.0" layoutY="3.0" orientation="VERTICAL" prefHeight="166.0" prefWidth="0.0" />
+      <Pane layoutX="71.0" layoutY="189.0" prefHeight="5.0" prefWidth="588.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" />
+   </children>
+</AnchorPane>

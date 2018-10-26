@@ -1,0 +1,12 @@
+.jfx-progress-bar > .track {
+    -fx-background-color: white;
+}
+
+.jfx-progress-bar > .bar {
+    -fx-background-color: blue;
+}
+
+/*.jfx-progress-bar {
+    -fx-padding: 10px;
+    -fx-progress-color: yellow;
+}*/

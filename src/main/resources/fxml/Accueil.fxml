@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="1134.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="-1.0" layoutY="-1.0" prefHeight="55.0" prefWidth="810.0" style="-fx-background-color: #ea80fc#ea80fc;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" prefHeight="55.0" prefWidth="83.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/trelux26.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="CENTER" prefHeight="55.0" prefWidth="152.0" text="Trelux Shop Distribution" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <TextField prefHeight="40.0" prefWidth="485.0">
+               <HBox.margin>
+                  <Insets top="6.0" />
+               </HBox.margin>
+            </TextField>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" prefHeight="43.0" prefWidth="63.0">
+               <HBox.margin>
+                  <Insets top="6.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icone/search1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXButton contentDisplay="CENTER" layoutX="711.0" layoutY="65.0" prefHeight="33.0" prefWidth="132.0" style="-fx-background-color: #8e24aa#8e24aa;" text="Connexion" textFill="WHITE" AnchorPane.rightAnchor="152.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="CENTER" layoutX="853.0" layoutY="65.0" prefHeight="33.0" prefWidth="135.0" style="-fx-background-color: #8e24aa#8e24aa;" text="S'inscrire" textFill="WHITE" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

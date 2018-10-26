@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashbordAdmin" minHeight="655.0" minWidth="1150.0" prefHeight="655.0" prefWidth="1150.0" style="-fx-background-color: white;" stylesheets="@../styles/administrateur.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.StatistiqueController">
+                              <children>
+        <VBox alignment="TOP_CENTER" prefHeight="655.0" prefWidth="277.0" styleClass="sidebar">
+            <children>
+                <Label prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #00A2D3;" text="Admisnistrateur" textFill="WHITE">
+                    <padding>
+                        <Insets left="60.0" />
+                    </padding>
+                    <font>
+                        <Font name="Ebrima" size="18.0" />
+                    </font>
+                </Label>
+                <HBox alignment="CENTER_LEFT">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="217.0" styleClass="btns">
+                    <children>
+                       
+                        <Label prefHeight="18.0" prefWidth="81.0" text="Boutique" textFill="#7c8184">
+                            <font>
+                                <Font name="Calibri Light" size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                                          <Label fx:id="idBoutique" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="17.0" styleClass="round-lbl" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <cursor>
+                       
+                    </cursor>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="214.0" styleClass="btns">
+                    <children>
+                       
+                        <Label prefHeight="18.0" prefWidth="75.0" text="Employés" textFill="#7c8184">
+                            <font>
+                                <Font name="Calibri Light" size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                                          <Label fx:id="idEmploye" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="18.0" styleClass="round-lbl" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <cursor>
+                       
+                    </cursor>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="216.0" styleClass="btns">
+                    <children>
+                        
+                        <Label prefHeight="19.0" prefWidth="97.0" text="Fournisseur" textFill="#7c8184">
+                            <font>
+                                <Font name="Calibri Light" size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                                          <Label fx:id="idFournisseur" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="17.0" styleClass="round-lbl" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <cursor>
+                       
+                    </cursor>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="213.0" styleClass="btns">
+                    <children>
+                        
+                        <Label prefHeight="18.0" prefWidth="46.0" text="Client" textFill="#7c8184">
+                            <font>
+                                <Font name="Calibri Light" size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                                          <Label fx:id="idClient" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="17.0" styleClass="round-lbl" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <cursor>
+                       
+                    </cursor>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="252.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="215.0" styleClass="btns">
+                    <children>
+                        
+                        <Label prefHeight="19.0" prefWidth="84.0" text="Message" textFill="#7c8184">
+                            <font>
+                                <Font name="Calibri Light" size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                                          <Label fx:id="idMessage" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="19.0" styleClass="round-lbl" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <cursor>
+                      
+                    </cursor>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+                </HBox>
+                <JFXButton buttonType="RAISED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="221.0" ripplerFill="WHITE" style="-fx-background-color: #00A2D3; -fx-background-radius: 0px;" text="Finance" textFill="WHITE" visible="false">
+                    <VBox.margin>
+                        <Insets top="250.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Calibri Light" size="14.0" />
+                    </font>
+                    <graphic>
+                        
+                    </graphic>
+                    <cursor>
+                        
+                    </cursor>
+                </JFXButton>
+            </children>
+        </VBox>
+        <VBox layoutX="300.0" prefHeight="655.0" prefWidth="837.0">
+            <children>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="837.0" style="-fx-background-color: #fff;">
+                    <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" color="#e8e4e4" height="10.0" radius="4.5" width="10.0" />
+                    </effect>
+                    <children>
+                        <Label layoutX="40.0" layoutY="14.0" prefHeight="27.0" prefWidth="167.0" text="Tableau de Bord" textFill="#7c8184">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+         <JFXButton layoutX="691.0" layoutY="3.0" mnemonicParsing="false" onAction="#chartController" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #00A2D3;" text="Evolution" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="34.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icone/statistique.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </JFXButton>
+                    </children>
+                </Pane>
+                <Pane fx:id="stats" prefHeight="347.0" prefWidth="837.0">
+                          <Label fx:id="statut" layoutX="634.0" layoutY="307.0" prefHeight="17.0" prefWidth="83.0" text="Pourcentage" visible="false" />
+                                       <LineChart fx:id="lineChart" layoutX="-25.0" layoutY="-1.0" prefHeight="345.0" prefWidth="476.0">
+                                         <xAxis>
+                                           <CategoryAxis side="BOTTOM" />
+                                         </xAxis>
+                                         <yAxis>
+                                           <NumberAxis side="LEFT" />
+                                         </yAxis>
+                                       </LineChart>
+      <Label fx:id="statut1" layoutX="155.0" layoutY="454.0" prefHeight="17.0" prefWidth="186.0" />
+                                       <PieChart fx:id="piechart" layoutX="444.0" layoutY="8.0" prefHeight="312.0" prefWidth="395.0" title="Préférence des Clients" />
+
+                </Pane>
+                <HBox alignment="CENTER" prefHeight="264.0" prefWidth="837.0">
+                    <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="267.0" styleClass="card-01" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label fx:id="idProduitEnStock" alignment="CENTER" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #72D3FE;" text="Produits en Stock (0)">
+                                    <font>
+                                        <Font name="Ebrima Bold" size="15.0" />
+                                    </font>
+                                </Label>
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="160.0" style="-fx-border-color: #72D3FE;" styleClass="round-box">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <ProgressIndicator prefHeight="100.0" prefWidth="100.0" />
+                                    </children>
+                                </HBox>
+                                <Label fx:id="idProduitEnStockPercent" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #72D3FE;" text="56%">
+                                    <font>
+                                        <Font name="Ebrima Bold" size="15.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="278.0" styleClass="card-02" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label fx:id="idProduitVendu" alignment="CENTER" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #FFC66C;" text="Produits vendus (0)">
+                                    <font>
+                                        <Font name="Ebrima Bold" size="15.0" />
+                                    </font>
+                                </Label>
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="160.0" style="-fx-border-color: #72D3FE;" styleClass="round-box">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <ProgressIndicator prefHeight="100.0" prefWidth="100.0" />
+                                    </children>
+                                </HBox>
+                                <Label fx:id="idProduitVenduPercent" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #FFC66C;" text="38%">
+                                    <font>
+                                        <Font name="Ebrima Bold" size="15.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="260.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="273.0" styleClass="card-03" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label fx:id="idProduitExpire" alignment="CENTER" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #45B7AF;" text="Produits expirés (0)">
+                                    <font>
+                                        <Font name="Ebrima Bold" size="15.0" />
+                                    </font>
+                                </Label>
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="160.0" style="-fx-border-color: #72D3FE;" styleClass="round-box">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <ProgressIndicator prefHeight="100.0" prefWidth="100.0" />
+                                    </children>
+                                </HBox>
+                                <Label fx:id="idProduitExpirePercent" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: #45B7AF;" text="6%">
+                                    <font>
+                                        <Font name="Ebrima Bold" size="15.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

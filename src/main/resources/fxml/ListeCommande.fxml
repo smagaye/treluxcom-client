@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane minHeight="200.0" minWidth="700.0" prefHeight="337.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.ListeCommandeController">
+   <content>
+      <VBox fx:id="vboxCommande">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </VBox>
+   </content>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</ScrollPane>

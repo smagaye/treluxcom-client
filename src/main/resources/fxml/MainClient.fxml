@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane id="scrollPaneClient" fx:id="scrollPaneClient" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1196.0" prefWidth="1282.0" styleClass="scrollPaneClient" stylesheets="@../styles/pageinternaute.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.MainClientController">
+   <content>
+      <VBox prefHeight="1381.0" prefWidth="1234.0" style="-fx-background-color: #03a9f4 #03a9f4 #03a9f4 #03a9f4;">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="1280.0" style="-fx-background-color: #00b0ff#00b0ff;">
+               <children>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" prefHeight="55.0" prefWidth="83.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="profil" fitHeight="43.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/trelux35.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="nomClient" contentDisplay="CENTER" prefHeight="55.0" prefWidth="152.0" text="Trelux Shop Distribution" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <TextField prefHeight="40.0" prefWidth="445.0" promptText="Recherche .....">
+                     <HBox.margin>
+                        <Insets left="60.0" top="6.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <JFXButton contentDisplay="GRAPHIC_ONLY" prefHeight="37.0" prefWidth="64.0">
+                     <HBox.margin>
+                        <Insets top="6.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/search1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="panier" onAction="#btnPanier" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: #01579b #01579b;" text="Panier" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="200.0" top="10.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/buy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="CENTER" onAction="#btnDeconnexion" prefHeight="33.0" prefWidth="121.0" style="-fx-background-color: red;" text="Deconnexion" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="6.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <AnchorPane fx:id="anchor" prefHeight="413.0" prefWidth="1270.0" style="-fx-background-color: #03a9f4 #03a9f4;">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pagination fx:id="pagination" currentPageIndex="7" layoutX="8.0" layoutY="12.0" pageCount="20" prefHeight="388.0" prefWidth="849.0" style="-fx-background-color: white;" stylesheets="@../styles/pageinternaute.css" />
+                  <Pane id="sponsor" layoutX="870.0" layoutY="12.0" prefHeight="401.0" prefWidth="388.0" style="-fx-background-color: red;" />
+    </children>
+            </AnchorPane>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #03a9f4 #03a9f4 #03a9f4;">
+               <children>
+                  <Label prefHeight="117.0" prefWidth="848.0" style="-fx-background-color: white; -fx-border-radius: 120;" text="Qualité, Rapidité, Performance et Efficacité sont les mots d’ordre de Trelux Distribution Service. A travers son engagement pour la qualité et son réseau de distribution complet, la Trelux  a su gagner la confiance des marques les plus prestigieuses au monde. Elle maintient ainsi, depuis 2017, sa position de leadership dans la distribution de boisson du Sénégal." textAlignment="CENTER" wrapText="true">
+                     <padding>
+                        <Insets left="15.0" right="15.0" top="4.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Pane id="lego" prefHeight="86.0" prefWidth="387.0">
+                     <HBox.margin>
+                        <Insets left="9.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox maxHeight="340.0" maxWidth="1258.0" prefHeight="213.0" prefWidth="1248.0" spacing="10.0" style="-fx-background-color: #03a9f4 #03a9f4 #03a9f4;">
+               <children>
+                  <ScrollPane prefHeight="217.0" prefWidth="848.0" style="-fx-background-color: white;">
+                     <content>
+                        <VBox fx:id="vboxProduit" minHeight="41.0" minWidth="42.0" prefHeight="390.0" prefWidth="823.0" spacing="10.0" style="-fx-background-color: white;" />
+                     </content>
+                  </ScrollPane>
+                  <MediaView fx:id="media">
+                     <HBox.margin>
+                        <Insets left="6.0" />
+                     </HBox.margin></MediaView>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="361.0" prefWidth="1243.0">
+               <children>
+                  <JFXButton id="event1" contentDisplay="GRAPHIC_ONLY" onAction="#btnEvent1" prefHeight="346.0" prefWidth="419.0" text="Button" />
+                  <JFXButton id="event2" contentDisplay="GRAPHIC_ONLY" onAction="#btnEvent2" prefHeight="346.0" prefWidth="435.0" text="Button" />
+                  <JFXButton id="event3" contentDisplay="GRAPHIC_ONLY" onAction="#btnEvent3" prefHeight="346.0" prefWidth="428.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <StackPane fx:id="stackpane" prefHeight="4.0" prefWidth="1247.0" style="-fx-background-color: #03a9f4 #03a9f4 #03a9f4 #03a9f4;">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </StackPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

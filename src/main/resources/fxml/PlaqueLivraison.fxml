@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="84.0" prefWidth="214.0" style="-fx-background-color: #f06292; -fx-border-color: #006064; -fx-border-bottom-width: 2px;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="77.0" layoutY="44.0" prefHeight="20.0" prefWidth="177.0" text="Gaye" textFill="#220505">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="6.0" prefHeight="20.0" prefWidth="188.0" text="PAN20180511234512343" textFill="#220505">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="25.0" prefHeight="20.0" prefWidth="195.0" text="Adama" textFill="#220505">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane id="profil" layoutY="-4.0" prefHeight="89.0" prefWidth="69.0" stylesheets="@../styles/mainlivreur.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+   <effect>
+      <DropShadow color="#eb6da8" />
+   </effect>
+</AnchorPane>

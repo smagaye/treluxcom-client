@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="784.0" style="-fx-background-color: #c8fff0;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.FormulaireClientController">
+    <stylesheets>
+        <URL value="@/styles/formulaireclient.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="prenom" labelFloat="true" layoutX="34.0" layoutY="68.0" prefHeight="17.0" prefWidth="170.0" promptText="Prenom" />
+      <JFXTextField fx:id="nom" labelFloat="true" layoutX="258.0" layoutY="69.0" prefHeight="17.0" prefWidth="170.0" promptText="Nom" />
+      <JFXRadioButton fx:id="m" layoutX="72.0" layoutY="141.0" onAction="#eventRadio" selected="true" text="M">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexe" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton fx:id="f" layoutX="153.0" layoutY="141.0" onAction="#eventRadio" text="F" toggleGroup="$sexe" />
+      <DatePicker fx:id="datenaissance" layoutX="256.0" layoutY="137.0" promptText="Date de naissance" />
+      <JFXTextField fx:id="lieunaissance" labelFloat="true" layoutX="39.0" layoutY="200.0" prefHeight="25.0" prefWidth="170.0" promptText="Lieu de naissance" />
+      <JFXTextField fx:id="nationalite" labelFloat="true" layoutX="256.0" layoutY="201.0" prefHeight="25.0" prefWidth="174.0" promptText="Nationalité" />
+      <JFXTextField fx:id="adresse" labelFloat="true" layoutX="32.0" layoutY="271.0" prefHeight="25.0" prefWidth="174.0" promptText="Adresse" />
+      <JFXTextField fx:id="telephone" labelFloat="true" layoutX="256.0" layoutY="271.0" prefHeight="25.0" prefWidth="174.0" promptText="Telephone" />
+      <JFXTextField fx:id="email" labelFloat="true" layoutX="32.0" layoutY="339.0" onKeyReleased="#onKeyRealeasedEmail" prefHeight="17.0" prefWidth="170.0" promptText="E-mail" />
+      <JFXPasswordField fx:id="motpasse1" focusColor="#4059a9b5" labelFloat="true" layoutX="258.0" layoutY="339.0" onKeyReleased="#onKeyPressedMotpass1" prefHeight="25.0" prefWidth="170.0" promptText="Saisir Mot de Passe" />
+      <JFXPasswordField fx:id="motpasse2" labelFloat="true" layoutX="501.0" layoutY="339.0" onKeyReleased="#onKeyRealeasedMotpasse2" prefHeight="25.0" prefWidth="170.0" promptText="Confirmer mot de passe" visible="false" />
+      <JFXButton layoutX="501.0" layoutY="213.0" onAction="#btnChargerPhoto" prefHeight="34.0" prefWidth="142.0" style="-fx-background-color: #1fd3b5;" text="Charger Photo" />
+      <JFXButton layoutX="256.0" layoutY="427.0" onAction="#btnInscrire" prefHeight="41.0" prefWidth="226.0" ripplerFill="#c8fff070" style="-fx-background-color: #1fd3b5;" text="S'inscrire" />
+      <Label layoutX="39.0" layoutY="141.0" text="Sexe" />
+      <ImageView fx:id="profil" fitHeight="140.0" fitWidth="142.0" layoutX="501.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="reponse" layoutX="32.0" layoutY="384.0" prefHeight="17.0" prefWidth="700.0" textFill="#f52020">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

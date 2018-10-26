@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<ScrollPane prefHeight="442.0" prefWidth="863.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxml.MainPasserCommandeController">
+   <content>
+      <VBox />
+   </content>
+</ScrollPane>

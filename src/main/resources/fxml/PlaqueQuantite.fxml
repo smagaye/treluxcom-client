@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="224.0" prefWidth="208.0" style="-fx-background-color: #ce93d8;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.PlaqueQuantiteController">
+   <children>
+      <Label layoutX="193.0" layoutY="6.0" onMouseClicked="#btnExit" text="X" textFill="#cd1ca4" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" prefHeight="41.0" prefWidth="159.0" text="Sprite" textAlignment="CENTER" textFill="#551ed3" underline="true" />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="41.0" prefHeight="85.0" prefWidth="208.0" text="Button" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <graphic>
+            <ImageView fx:id="image" fitHeight="74.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ressourceMedia/sprite.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TextField fx:id="quantite" layoutX="105.0" layoutY="135.0" prefHeight="27.0" prefWidth="77.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="128.0" prefHeight="41.0" prefWidth="117.0" text="Quantite :" />
+      <JFXButton layoutX="33.0" layoutY="176.0" onAction="#btnAjouter" prefHeight="28.0" prefWidth="147.0" style="-fx-background-color: #9102b8;" text="Ajouter au panier" textFill="WHITE" />
+   </children>
+</AnchorPane>

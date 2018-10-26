@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="329.0" prefWidth="316.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="289.0" prefHeight="17.0" prefWidth="179.0" style="-fx-background-color: #930909#930909;" text="STO2018090708123" textFill="WHITE" wrapText="true">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Facture" visible="false" />
+                  <MenuItem mnemonicParsing="false" text="QR Code" />
+                  <MenuItem mnemonicParsing="false" text="Publier" />
+              </items>
+            </ContextMenu>
+         </contextMenu></Label>
+      <Label layoutX="144.0" layoutY="185.0" text="0" />
+      <JFXProgressBar layoutX="182.0" layoutY="189.0" opacity="0.65" prefHeight="9.0" prefWidth="108.0" progress="0.16" style="-fx-border-color: green; -fx-accent: yellow;">
+         <styleClass>
+            <String fx:value="track" />
+            <String fx:value="progress-bar" />
+         </styleClass>
+      </JFXProgressBar>
+      <Label layoutX="144.0" layoutY="212.0" text="0" />
+      <JFXProgressBar layoutX="184.0" layoutY="216.0" opacity="0.96" prefHeight="9.0" prefWidth="105.0" progress="1.0" style="-fx-border-color: blue;" />
+      <Label layoutX="144.0" layoutY="235.0" text="0" />
+      <JFXProgressBar layoutX="184.0" layoutY="240.0" opacity="0.96" prefHeight="9.0" prefWidth="105.0" progress="1.0" style="-fx-border-color: green;" />
+      <Label layoutX="144.0" layoutY="259.0" text="0" />
+      <JFXProgressBar layoutX="184.0" layoutY="264.0" opacity="0.96" prefHeight="9.0" prefWidth="106.0" progress="1.0" style="-fx-border-color: red;" />
+      <Label layoutY="185.0" prefHeight="17.0" prefWidth="133.0" text="Quantite initiale :" underline="true">
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </Label>
+      <Label layoutX="14.0" layoutY="211.0" prefHeight="17.0" prefWidth="117.0" text="Produits en stock :" underline="true" />
+      <Label layoutX="14.0" layoutY="235.0" prefHeight="17.0" prefWidth="117.0" text="Produits vendus :" underline="true">
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </Label>
+      <Label layoutX="11.0" layoutY="259.0" prefHeight="17.0" prefWidth="117.0" text="Produits expires :" underline="true">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <ImageView fitHeight="166.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/stock.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

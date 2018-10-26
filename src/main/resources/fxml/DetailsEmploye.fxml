@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="209.0" prefWidth="899.0" style="-fx-background-color: #AD1457;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="com.treluxcom.controlleur.DetailsEmployeController">
+    <stylesheets>
+        <URL value="@/styles/detailsemploye.css" />
+    </stylesheets>
+   <children>
+      <Separator layoutY="25.0" orientation="VERTICAL" prefHeight="175.0" prefWidth="6.0" AnchorPane.leftAnchor="480.0" />
+      <HBox layoutX="216.0" prefHeight="208.0" prefWidth="565.0">
+         <children>
+            <VBox prefHeight="194.0" prefWidth="272.0">
+               <children>
+                  <HBox prefHeight="70.0" prefWidth="277.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="70.0" text="Monsieur" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="209.0" text="Serigne Malick Ada Gaye" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="63.0" text="Né(e) le :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="187.0" text=" 16-03-1994" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="75.0" text="à " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="321.0" text=" Dakar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="151.0" text="Pays" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="334.0" text="Sénégal" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="151.0" text="Habite à" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="298.0" text="114 Zone de Captage" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="115.0" text="Joignable  au" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="209.0" text="+221772979863" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="194.0" prefWidth="277.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="20.0" prefWidth="42.0" text="Login" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="209.0" text="ada@trelux.com" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/key3.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="20.0" prefWidth="97.0" text="Mot de passe :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="177.0" text="ada" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/Calendar.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="20.0" prefWidth="43.0" text="Droit :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="200.0" text=" Dakar" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/email.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="20.0" prefWidth="54.0" text="E-mail :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="194.0" text="add@gmail.com" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/param.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="20.0" prefWidth="161.0" text="Nombre de connexion :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="106.0" text="320" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/Delete-Database-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="20.0" prefWidth="150.0" text="Code d'accès : " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="20.0" prefWidth="205.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="212.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/trelux14.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="781.0" layoutY="47.0" prefHeight="91.0" prefWidth="106.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="Editer">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="101.0" text="Fermer">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Separator layoutX="490.0" layoutY="16.0" orientation="VERTICAL" prefHeight="175.0" prefWidth="6.0" AnchorPane.leftAnchor="760.0" AnchorPane.topAnchor="16.0" />
+   </children>
+</AnchorPane>

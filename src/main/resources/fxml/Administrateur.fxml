@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../styles/administrateur.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.AdministrateurController">
+    <children>
+        <StackPane fx:id="stackPanePrincipal" prefHeight="712.0" prefWidth="1137.0" style="-fx-background-color: #8c9eff;">
+            <children>
+                <JFXTabPane fx:id="tabpane3" prefHeight="50.0" prefWidth="824.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab style="-fx-background-color: white;">
+                            <fx:include source="Statistique.fxml" />
+                            <graphic>
+                                <ImageView fitHeight="47.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/home.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Tab>
+                        <Tab style="-fx-background-color: #880e4f;" text="Mes Employés">
+                            <fx:include source="EnregistrerEmploye.fxml" />
+                        </Tab>
+                        <Tab style="-fx-background-color: blue;" text="Famille de Boisson">
+                            <fx:include source="GestionFamilleBoisson.fxml" />
+                        </Tab>
+                        <Tab style="-fx-background-color: #006064;" text="Mes Boutiques">
+                            <fx:include source="MesBoutiques.fxml" />
+                        </Tab>
+                        <Tab style="-fx-background-color: #7e57c2;" text="Fournisseurs">
+                            <fx:include source="Fournisseurs.fxml" />
+                        </Tab>
+                    </tabs>
+                </JFXTabPane>
+                <JFXTabPane fx:id="tabpane1" prefHeight="655.0" prefWidth="1137.0" visible="false">
+                    <tabs>
+                        <Tab closable="false" disable="true" style="-fx-background-color: white;">
+                            <graphic>
+                                <ImageView fitHeight="47.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/home.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Tab>
+                        <Tab style="-fx-background-color: #880e4f;" text="Mes Stocks">
+                            <AnchorPane style="-fx-background-color: #880e4f;">
+                        <children>
+                           <Pane layoutX="197.0" layoutY="23.0" prefHeight="76.0" prefWidth="699.0" style="-fx-background-color: white;">
+                              <children>
+                                 <JFXRadioButton fx:id="stockEncours" layoutX="76.0" layoutY="54.0" onAction="#radioStock" selected="true" text="En cours">
+                                    <toggleGroup>
+                                       <ToggleGroup fx:id="etatStock" />
+                                    </toggleGroup></JFXRadioButton>
+                                 <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="114.0" onAction="#radioStock" prefHeight="49.0" prefWidth="67.0">
+                                    <graphic>
+                                       <ImageView fitHeight="61.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@../icone/horloge%20(1).png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </JFXButton>
+                                 <JFXRadioButton fx:id="stockEpuise" layoutX="315.0" layoutY="54.0" onAction="#radioStock" text="Epuise" toggleGroup="$etatStock" />
+                                 <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="337.0" layoutY="2.0" onAction="#radioStock" prefHeight="49.0" prefWidth="67.0" text="Button">
+                                    <graphic>
+                                       <ImageView fitHeight="61.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@../icone/sansrep.jpeg" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </JFXButton>
+                                 <JFXRadioButton fx:id="stockPublie" layoutX="520.0" layoutY="54.0" onAction="#radioStock" prefHeight="17.0" prefWidth="95.0" text="Publie" toggleGroup="$etatStock" />
+                                 <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="540.0" layoutY="2.0" onAction="#radioStock" prefHeight="49.0" prefWidth="67.0" text="Button">
+                                    <graphic>
+                                       <ImageView fitHeight="61.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@../icone/all.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </JFXButton>
+                              </children></Pane>
+                           <ScrollPane layoutX="36.0" layoutY="125.0" prefHeight="515.0" prefWidth="1066.0" style="-fx-background-color: #880e4f;">
+                              <content>
+                                 <VBox fx:id="vBoxStock" prefHeight="672.0" prefWidth="1044.0" spacing="10.0" style="-fx-background-color: #880e4f;">
+                                    <padding>
+                                       <Insets left="45.0" right="10.0" top="10.0" />
+                                    </padding>
+                                 </VBox>
+                              </content>
+                           </ScrollPane>
+                        </children></AnchorPane>
+                        </Tab>
+                        <Tab disable="true" style="-fx-background-color: #9c27b0;" text="Rangement" />
+                        <Tab disable="true" text="Recette" />
+                    </tabs>
+                    <StackPane.margin>
+                        <Insets />
+                    </StackPane.margin>
+                </JFXTabPane>
+                <JFXTabPane fx:id="tabpane2" prefHeight="684.0" prefWidth="1137.0" visible="false">
+                    <tabs>
+                        <Tab disable="true" style="-fx-background-color: white;">
+                            <graphic>
+                                <ImageView fitHeight="47.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/home.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Tab>
+                        <Tab style="-fx-background-color: blue;" text="Passer une Commande">
+                            <content>
+                                <AnchorPane fx:id="anchorpanePasserCommande" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: blue;">
+                                    <children>
+                                        <ScrollPane id="scrollPaneFournisseur" fx:id="scrollPaneFournisseur" layoutX="121.0" layoutY="91.0" prefHeight="537.0" prefWidth="895.0" style="-fx-background-color: white;" styleClass="scrollPaneFournisseur" stylesheets="@../styles/administrateur.css">
+                                            <content>
+                                                <VBox fx:id="vboxFournisseur" style="-fx-background-color: white;" />
+                                            </content>
+                                            <padding>
+                                                <Insets bottom="10.0" left="10.0" />
+                                            </padding>
+                                        </ScrollPane>
+                                        <Label layoutX="121.0" layoutY="28.0" prefHeight="42.0" prefWidth="894.0" style="-fx-background-color: #1e88e5;" text="Veuillez choisir un founisseur pour votre commande" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Bookman Old Style Bold Italic" size="18.0" />
+                                            </font>
+                                            <padding>
+                                                <Insets left="20.0" />
+                                            </padding>
+                                            <effect>
+                                                <DropShadow radius="18.155" width="53.62" />
+                                            </effect>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: #880e4f;" text="Mes Commandes">
+                            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #880e4f #880e4f;">
+                                <children>
+                                    <VBox layoutY="88.0" prefHeight="576.0" prefWidth="249.0" style="-fx-background-color: #ad1457 #ad1457;">
+                                        <children>
+                                            <HBox prefHeight="61.0" prefWidth="249.0" style="-fx-background-color: #880e4f #880e4f #880e4f #880e4f;">
+                                                <children>
+                                                    <Label prefHeight="55.0" prefWidth="160.0" text="Toutes les Commandes " textFill="WHITE">
+                                                        <padding>
+                                                            <Insets left="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                    <Label fx:id="statToutesCommandes" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="round-lbl" text="0" textFill="WHITE">
+                                                        <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                        </font>
+                                                        <HBox.margin>
+                                                            <Insets top="14.0" />
+                                                        </HBox.margin>
+                                                        <padding>
+                                                            <Insets bottom="2.0" left="5.0" right="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                </children>
+                                                <VBox.margin>
+                                                    <Insets top="140.0" />
+                                                </VBox.margin>
+                                            </HBox>
+                                            <HBox prefHeight="61.0" prefWidth="249.0" style="-fx-background-color: #880e4f #880e4f #880e4f #880e4f;">
+                                                <children>
+                                                    <Label fx:id="statCommandeEncours" prefHeight="55.0" prefWidth="160.0" text="Commandes en cours" textFill="WHITE">
+                                                        <padding>
+                                                            <Insets left="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                    <Label fx:id="statCommandeEncours" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="round-lbl" text="0" textFill="WHITE">
+                                                        <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                        </font>
+                                                        <HBox.margin>
+                                                            <Insets top="19.0" />
+                                                        </HBox.margin>
+                                                        <padding>
+                                                            <Insets bottom="2.0" left="5.0" right="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                </children>
+                                            </HBox>
+                                            <HBox prefHeight="61.0" prefWidth="249.0" style="-fx-background-color: #880e4f #880e4f #880e4f #880e4f;">
+                                                <children>
+                                                    <Label prefHeight="55.0" prefWidth="160.0" text="Commandes validees" textFill="WHITE">
+                                                        <padding>
+                                                            <Insets left="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                    <Label fx:id="statCommandesValidees" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="round-lbl" text="0" textFill="WHITE">
+                                                        <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                        </font>
+                                                        <HBox.margin>
+                                                            <Insets top="19.0" />
+                                                        </HBox.margin>
+                                                        <padding>
+                                                            <Insets bottom="2.0" left="5.0" right="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                </children>
+                                            </HBox>
+                                            <HBox prefHeight="61.0" prefWidth="249.0" style="-fx-background-color: #880e4f #880e4f #880e4f #880e4f;">
+                                                <children>
+                                                    <Label prefHeight="55.0" prefWidth="160.0" text="Commandes annulees" textFill="WHITE">
+                                                        <padding>
+                                                            <Insets left="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                    <Label fx:id="statCommandesAnnulees" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="round-lbl" text="0" textFill="WHITE">
+                                                        <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                        </font>
+                                                        <HBox.margin>
+                                                            <Insets top="19.0" />
+                                                        </HBox.margin>
+                                                        <padding>
+                                                            <Insets bottom="2.0" left="5.0" right="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                </children>
+                                            </HBox>
+                                            <HBox prefHeight="61.0" prefWidth="249.0" style="-fx-background-color: #880e4f #880e4f #880e4f #880e4f;">
+                                                <children>
+                                                    <Label prefHeight="55.0" prefWidth="184.0" text="Commandes sans reponse" textFill="WHITE">
+                                                        <padding>
+                                                            <Insets left="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                    <Label fx:id="statSansReponse" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="round-lbl" text="0" textFill="WHITE">
+                                                        <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                        </font>
+                                                        <HBox.margin>
+                                                            <Insets top="14.0" />
+                                                        </HBox.margin>
+                                                        <padding>
+                                                            <Insets bottom="2.0" left="5.0" right="5.0" />
+                                                        </padding>
+                                                    </Label>
+                                                </children>
+                                            </HBox>
+                                        </children>
+                                    </VBox>
+                                    <HBox layoutY="4.0" prefHeight="84.0" prefWidth="1084.0">
+                                        <children>
+                                            <Label alignment="CENTER" prefHeight="88.0" prefWidth="251.0" style="-fx-background-color: #880e4f #880e4f #880e4f #880e4f #880e4f #880e4f #880e4f #880e4f;" text="Statistiques sur Mes commandes" textAlignment="CENTER" textFill="WHITE">
+                                                <font>
+                                                    <Font name="System Bold" size="14.0" />
+                                                </font>
+                                            </Label>
+                                            <Pane prefHeight="84.0" prefWidth="835.0" style="-fx-background-color: white;">
+                                                <children>
+                                                    <JFXRadioButton fx:id="radiovalide" layoutX="307.0" layoutY="58.0" onAction="#btnRadioEtat" text="Validees">
+                                                        <toggleGroup>
+                                                            <ToggleGroup fx:id="etat" />
+                                                        </toggleGroup>
+                                                    </JFXRadioButton>
+                                                    <JFXRadioButton fx:id="radioannule" layoutX="453.0" layoutY="58.0" onAction="#btnRadioEtat" text="Annulees" toggleGroup="$etat" />
+                                                    <JFXRadioButton fx:id="radioencours" layoutX="591.0" layoutY="58.0" onAction="#btnRadioEtat" text="En cours" toggleGroup="$etat" />
+                                                    <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="342.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@../icone/validation.jpg" />
+                                                        </image>
+                                                    </ImageView>
+                                                    <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="493.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@../icone/fermer.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                    <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="630.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@../icone/horloge%20(1).png" />
+                                                        </image>
+                                                    </ImageView>
+                                                    <JFXRadioButton fx:id="radiotout" layoutX="173.0" layoutY="58.0" onAction="#btnRadioEtat" selected="true" text="Tout" toggleGroup="$etat" />
+                                                    <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="208.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@../icone/all.png" />
+                                                        </image>
+                                                    </ImageView>
+                                                    <JFXRadioButton fx:id="radiosansreponse" layoutX="14.0" layoutY="58.0" onAction="#btnRadioEtat" text="Sans Reponse" toggleGroup="$etat" />
+                                                    <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="49.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                        <image>
+                                                            <Image url="@../icone/sansrep.jpeg" />
+                                                        </image>
+                                                    </ImageView>
+                                                </children>
+                                            </Pane>
+                                        </children>
+                                    </HBox>
+                                    <ScrollPane layoutX="345.0" layoutY="88.0" prefHeight="550.0" prefWidth="634.0" style="-fx-background-color: #ad1457 #ad1457 #ad1457 #ad1457;">
+                                        <content>
+                                            <VBox fx:id="vBoxPrevCommande" prefHeight="0.0" prefWidth="0.0">
+                                                <padding>
+                                                    <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+                                                </padding>
+                                            </VBox>
+                                        </content>
+                                        <padding>
+                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                        </padding>
+                                    </ScrollPane>
+                                </children>
+                            </AnchorPane>
+                        </Tab>
+                        <Tab style="-fx-background-color: #006064;" text="Enregistrer">
+                            <fx:include source="EnregistrerCommande.fxml" /> 
+                        </Tab> 
+                    </tabs>
+                </JFXTabPane>
+                <JFXTabPane fx:id="tabpane4" prefHeight="694.0" prefWidth="1045.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+                    <tabs>
+                        <Tab disable="true" style="-fx-background-color: white;">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="655.0" prefWidth="818.0" style="-fx-background-color: white;" />
+                            </content>
+                            <graphic>
+                                <ImageView fitHeight="47.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/home.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Tab>
+                        <Tab text="Services">
+                            <fx:include source="CalendrierService.fxml" />
+                        </Tab>
+                    </tabs>
+                </JFXTabPane>
+                <JFXTabPane fx:id="tabpane5" prefHeight="50.0" prefWidth="824.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+                    <tabs>
+                        <Tab style="-fx-background-color: white;">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="655.0" prefWidth="818.0" style="-fx-background-color: white;" />
+                            </content>
+                            <graphic>
+                                <ImageView fitHeight="47.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/home.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Tab>
+                        <Tab text="Boîte de Réception" />
+                        <Tab text="Messages envoyées" />
+                        <Tab text="Brouillon" />
+                    </tabs>
+                </JFXTabPane>
+            </children>
+        </StackPane>
+        <AnchorPane fx:id="anchorpaneLateral" minWidth="0.0" prefHeight="623.0" prefWidth="176.0" style="-fx-background-color: transparent;" visible="false" AnchorPane.topAnchor="52.0">
+            <children>
+                <VBox fx:id="menuLateral" layoutX="7.0" layoutY="7.0" onMouseEntered="#menuOnMouseEntered" onMouseExited="#menuLateralOnMouseExited" prefHeight="631.0" prefWidth="163.0" visible="false">
+                    <children>
+                        <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#btnBoutiqueEvent" prefHeight="108.0" prefWidth="163.0" ripplerFill="#69b9e0" style="-fx-background-color: transparent;" styleClass="btnMenu" text="Boutique">
+                            <graphic>
+                                <ImageView fitHeight="53.0" fitWidth="70.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/shop.jpeg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Book Antiqua Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <Separator prefWidth="200.0" />
+                        <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#btnCommandesEvent" prefHeight="108.0" prefWidth="163.0" ripplerFill="#69b9e0" style="-fx-background-color: transparent;" styleClass="btnMenu" text="Commande">
+                            <graphic>
+                                <ImageView fitHeight="53.0" fitWidth="86.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/trelux44.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Book Antiqua Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <Separator prefWidth="200.0" />
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#btnGestionStockevent" prefHeight="108.0" prefWidth="163.0" ripplerFill="#69b9e0" style="-fx-background-color: transparent;" styleClass="btnMenu" text="Gestion de Stock" textAlignment="CENTER" textFill="#403737" wrapText="true">
+                            <font>
+                                <Font name="Book Antiqua Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="53.0" fitWidth="70.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icone/personnel.jpg" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </JFXButton>
+                        <Separator prefWidth="200.0" />
+                        <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#btnCalendrierServiceEvent" prefHeight="108.0" prefWidth="163.0" ripplerFill="#69b9e0" style="-fx-background-color: transparent;" styleClass="btnMenu" text="Calendrier de Service">
+                            <graphic>
+                                <ImageView fitHeight="53.0" fitWidth="70.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/Calendar.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Book Antiqua Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <Separator prefWidth="200.0" />
+                        <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#btnMessagerie" prefHeight="108.0" prefWidth="163.0" ripplerFill="#69b9e0" style="-fx-background-color: transparent;" styleClass="btnMenu" text="Messagerie">
+                            <graphic>
+                                <ImageView fitHeight="53.0" fitWidth="86.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/messagerie.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Book Antiqua Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <Separator prefWidth="200.0" />
+                        <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#btnStatistiquesEvent" prefHeight="108.0" prefWidth="163.0" ripplerFill="#69b9e0" style="-fx-background-color: transparent;" styleClass="btnMenu" text="Quitter">
+                            <graphic>
+                                <ImageView fitHeight="53.0" fitWidth="86.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: white;">
+                                    <image>
+                                        <Image url="@../icone/fermer.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Book Antiqua Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <JFXDrawer onMouseEntered="#declencheurMenuOnMouseEntered" prefHeight="705.0" prefWidth="10.0" style="-fx-background-color: transparent;" />
+        <StackPane fx:id="stackpaneAlert" prefHeight="9.0" prefWidth="10.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="250.0" />
+        <Pane id="pane" prefHeight="712.0" prefWidth="147.0" AnchorPane.rightAnchor="0.0" />
+    </children>
+</AnchorPane>

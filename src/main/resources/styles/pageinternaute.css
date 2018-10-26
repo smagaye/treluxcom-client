@@ -1,0 +1,92 @@
+/* Pagination css*/
+.pagination > .pagination-control > .control-box > .number-button,
+.pagination > .pagination-control > .control-box > .bullet-button,
+.pagination > .pagination-control > .control-box > .left-arrow-button,
+.pagination > .pagination-control > .control-box > .right-arrow-button {
+    -fx-background-insets: 0, 1;
+    -fx-background-color: lightgray, #FAFAFA;
+    -fx-min-width: 30;
+    -fx-min-height: 30;
+}
+
+/* Colors on hover */
+.pagination > .pagination-control > .control-box > .number-button:hover,
+.pagination > .pagination-control > .control-box > .bullet-button:hover,
+.pagination > .pagination-control > .control-box > .left-arrow-button:hover,
+.pagination > .pagination-control > .control-box > .right-arrow-button:hover {
+    -fx-background-insets: 0;
+    -fx-background-color: #ce93d8;
+}
+
+/* Selected toggle color */
+.pagination > .pagination-control > .control-box > .number-button:selected,
+.pagination > .pagination-control > .control-box > .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: #58379A;
+    -fx-text-fill: white;
+}
+/* Pane Sponsoring*/
+#sponsor{
+    -fx-background-image:url("../images/join.jpg");  
+    -fx-background-size:     cover;                     
+    -fx-background-repeat:   no-repeat;
+}
+
+#lego{
+    -fx-background-image:url("../images/lego.png");  
+    -fx-background-size:     cover;                     
+    -fx-background-repeat:   no-repeat;
+}
+
+#footer{
+    -fx-background-image:url("../images/footer.png");  
+    -fx-background-size:     cover;                     
+    -fx-background-repeat:   no-repeat;
+}
+
+#event1{
+    -fx-background-image:url("../images/event1.png");  
+    -fx-background-size:     cover;                     
+    -fx-background-repeat:   no-repeat;
+    -fx-background-position: center center;
+}
+
+#event2{
+    -fx-background-image:url("../images/event2.png");  
+    -fx-background-size:     cover;                     
+    -fx-background-repeat:   no-repeat;
+    -fx-background-position: center center;
+}
+#event3{
+    -fx-background-image:url("../images/event3.png");  
+    -fx-background-size:     cover;                     
+    -fx-background-repeat:   no-repeat;
+    -fx-background-position: center center;
+}
+
+/*  Scroball Customer   */
+
+.scrollPaneClient .increment-button ,.scrollPaneClient .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.scrollPaneClient .scroll-bar:horizontal .track,
+.scrollPaneClient .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive(violet,80%);
+
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.scrollPaneClient .scroll-bar:horizontal .thumb,
+.scrollPaneClient .scroll-bar:vertical .thumb {
+    -fx-background-color:#0091ea;
+    /*-fx-background-insets: 2, 0, 0;*/
+    -fx-background-radius: 2em;
+
+}

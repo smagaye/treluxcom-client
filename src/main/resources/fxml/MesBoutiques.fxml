@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #006064;" stylesheets="@../styles/mesboutiques.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.MesBoutiquesController">
+         <children>
+            <Pane fx:id="ajoutFamille" layoutX="22.0" layoutY="27.0" prefHeight="417.0" prefWidth="415.0" style="-fx-background-color: #00838f;">
+               <children>
+                  <JFXButton layoutX="122.0" layoutY="341.0" mnemonicParsing="false" onAction="#btnEnregistrer" prefHeight="42.0" prefWidth="181.0" style="-fx-background-color: #00acc1;" text="Enregistrer">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/Save-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+            <Label layoutX="114.0" layoutY="-7.0" prefHeight="42.0" prefWidth="188.0" style="-fx-background-color: #00838f;" text="Enregistrement" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <effect>
+                  <DropShadow radius="18.155" width="53.62" />
+               </effect>
+            </Label>
+            <TextField fx:id="email" layoutX="25.0" layoutY="196.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="28.0" layoutY="173.0" prefHeight="17.0" prefWidth="78.0" text="E-mail" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomBoutique" layoutX="25.0" layoutY="136.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="23.0" layoutY="112.0" prefHeight="17.0" prefWidth="121.0" text="Nom de la Boutique" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adresse" layoutX="241.0" layoutY="135.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="245.0" layoutY="112.0" prefHeight="17.0" prefWidth="53.0" text="Adresse" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pays" layoutX="242.0" layoutY="256.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="246.0" layoutY="233.0" prefHeight="17.0" prefWidth="78.0" text="Pays" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="telephone" layoutX="25.0" layoutY="256.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="28.0" layoutY="233.0" prefHeight="17.0" prefWidth="101.0" text="Téléphone" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="108.0" layoutY="61.0" prefWidth="200.0" />
+            <TextField fx:id="ville" layoutX="241.0" layoutY="195.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="244.0" layoutY="172.0" prefHeight="17.0" prefWidth="90.0" text="Ville" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+               </children>
+               <effect>
+                  <DropShadow height="130.71" radius="74.4925" width="169.26" />
+               </effect>
+            </Pane>
+            <JFXTreeTableView fx:id="tableBoutique" layoutX="442.0" layoutY="80.0" prefHeight="364.0" prefWidth="657.0" stylesheets="@../styles/mesboutiques.css">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#mnEditer" text="Editer" />
+                 <MenuItem mnemonicParsing="false" onAction="#mnSupprimer" text="Supprimer" />
+              </items>
+            </ContextMenu>
+         </contextMenu></JFXTreeTableView>
+            <Label layoutX="447.0" layoutY="28.0" prefHeight="42.0" prefWidth="651.0" style="-fx-background-color: #00838f;" text="Boutiques" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <effect>
+                  <DropShadow radius="18.155" width="53.62" />
+               </effect>
+            </Label>
+      <Pane fx:id="plaque" layoutX="117.0" layoutY="450.0" prefHeight="164.0" prefWidth="881.0" style="-fx-background-color: #00838f;" visible="false">
+         <children>
+            <ImageView fitHeight="164.0" fitWidth="179.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/trelux16.jpeg" />
+               </image>
+               <effect>
+                  <Glow level="0.73" />
+               </effect>
+            </ImageView>
+            <HBox layoutX="193.0" layoutY="5.0" prefHeight="154.0" prefWidth="384.0">
+               <children>
+                  <VBox prefHeight="146.0" prefWidth="141.0">
+                     <children>
+                        <Label prefHeight="42.0" prefWidth="134.0" text="Nom de la Boutique :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="42.0" prefWidth="56.0" text="E-mail :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="85.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="42.0" prefWidth="74.0" text="Téléphone :" textAlignment="RIGHT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="60.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="154.0" prefWidth="206.0">
+                     <children>
+                        <Label fx:id="lbNomBoutique" prefHeight="42.0" prefWidth="142.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbEmail" prefHeight="42.0" prefWidth="142.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbTelephone" prefHeight="42.0" prefWidth="142.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="456.0" layoutY="5.0" prefHeight="154.0" prefWidth="470.0">
+               <children>
+                  <VBox prefHeight="115.0" prefWidth="147.0">
+                     <children>
+                        <Label prefHeight="42.0" prefWidth="68.0" text="Adresse : " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="80.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="61.0" prefWidth="47.0" text="Ville :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="100.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="24.0" prefWidth="47.0" text="Pays : " textAlignment="RIGHT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="100.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="123.0" prefWidth="279.0">
+                     <children>
+                        <Label fx:id="lbAdresse" prefHeight="63.0" prefWidth="274.0" text="ss" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbVille" prefHeight="75.0" prefWidth="279.0" text="xbaksbkxa" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets top="1.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="lbPays" prefHeight="39.0" prefWidth="269.0" text="dsds" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" visible="false">
+                           <graphic>
+                              <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icone/editIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="230.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></Pane>
+            <JFXTextField fx:id="recherche" focusColor="WHITE" labelFloat="true" layoutX="881.0" layoutY="37.0" prefHeight="25.0" prefWidth="206.0" promptText="Recherche ..." style="-fx-text-fill: #ffffff;" styleClass="search" stylesheets="@../styles/administrateur.css" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#4dbeea" radius="10.7425" width="23.97" />
+               </effect>
+            </JFXTextField>
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="1063.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icone/search.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>

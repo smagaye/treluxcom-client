@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="716.0" style="-fx-background-color: #4527a0;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.FournisseursController">
+         <children>
+            <Pane layoutX="22.0" layoutY="27.0" prefHeight="610.0" prefWidth="415.0" style="-fx-background-color:#4527a0 transparent;">
+               <children>
+                  <JFXButton layoutX="215.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnEnregistrer" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: green;" text="Enregistrer" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/Save-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+                  </JFXButton>
+            <Label layoutX="114.0" layoutY="-7.0" prefHeight="42.0" prefWidth="188.0" style="-fx-background-color: #673ab7;" text="Enregistrement" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <effect>
+                  <DropShadow radius="18.155" width="53.62" />
+               </effect>
+            </Label>
+            <Label layoutX="27.0" layoutY="100.0" text="Prénom" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="prenom" layoutX="26.0" layoutY="122.0" prefHeight="25.0" prefWidth="161.0" />
+            <TextField fx:id="nom" layoutX="244.0" layoutY="122.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="240.0" layoutY="100.0" prefHeight="17.0" prefWidth="31.0" text="Nom" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="243.0" layoutY="217.0" prefHeight="17.0" prefWidth="110.0" text="Lieu de Naissance" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lieuNaissance" layoutX="241.0" layoutY="238.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="login" layoutX="26.0" layoutY="365.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="29.0" layoutY="342.0" prefHeight="17.0" prefWidth="36.0" text="Login" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="telephone" layoutX="26.0" layoutY="305.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="24.0" layoutY="281.0" prefHeight="17.0" prefWidth="78.0" text="Téléphone" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adresse" layoutX="26.0" layoutY="176.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="29.0" layoutY="159.0" prefHeight="17.0" prefWidth="53.0" text="Adresse" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="242.0" layoutY="304.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="246.0" layoutY="281.0" prefHeight="17.0" prefWidth="53.0" text="E-mail" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="masc" layoutX="250.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnradioSexe" selected="true" text="M" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="sexe" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="fem" layoutX="303.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnradioSexe" text="F" textFill="WHITE" toggleGroup="$sexe">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="239.0" layoutY="159.0" prefHeight="17.0" prefWidth="31.0" text="Sexe" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dateNaissance" layoutX="24.0" layoutY="238.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="24.0" layoutY="217.0" text="Date de Naissance" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nationalite" layoutX="243.0" layoutY="425.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="247.0" layoutY="402.0" prefHeight="17.0" prefWidth="78.0" text="Nationalité" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="droit" layoutX="26.0" layoutY="425.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="29.0" layoutY="402.0" prefHeight="17.0" prefWidth="36.0" text="Droit" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="codeAcces" layoutX="26.0" layoutY="486.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="29.0" layoutY="463.0" prefHeight="17.0" prefWidth="78.0" text="Code d'accès" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutX="120.0" layoutY="68.0" prefHeight="25.0" prefWidth="179.0" />
+            <TextField fx:id="motpass" layoutX="242.0" layoutY="364.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="245.0" layoutY="341.0" prefHeight="17.0" prefWidth="90.0" text="Mot de passe" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="52.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnAnnuler" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: red;" text="Annuler" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icone/delete-file-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="reponse" layoutX="75.0" layoutY="51.0" prefHeight="17.0" prefWidth="329.0" textFill="#ff4343">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="reponseImg" fitHeight="25.0" fitWidth="36.0" layoutX="34.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               <effect>
+                  <DropShadow color="#9696e8" height="149.99" radius="79.3125" width="169.26" />
+               </effect>
+            </Pane>
+            <JFXTreeTableView fx:id="tableFournisseur" layoutX="447.0" layoutY="80.0" prefHeight="557.0" prefWidth="661.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#mnEditer" text="Editer" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnSupprimer" text="Supprimer" />
+              </items>
+            </ContextMenu>
+         </contextMenu></JFXTreeTableView>
+            <JFXTextField fx:id="recherche" focusColor="WHITE" labelFloat="true" layoutX="850.0" layoutY="36.0" prefHeight="25.0" prefWidth="258.0" promptText="Recherche ..." style="-fx-text-fill: #ffffff;" styleClass="search" stylesheets="@../styles/administrateur.css" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#4dbeea" radius="10.7425" width="23.97" />
+               </effect>
+            </JFXTextField>
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="1085.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icone/search.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="447.0" layoutY="28.0" prefHeight="42.0" prefWidth="275.0" style="-fx-background-color: #673ab7;" text="Liste des Fournisseurs" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <effect>
+                  <DropShadow radius="18.155" width="53.62" />
+               </effect>
+            </Label>
+         </children>
+</AnchorPane>

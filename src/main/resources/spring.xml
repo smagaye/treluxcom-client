@@ -1,0 +1,51 @@
+ <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+     <aop:aspectj-autoproxy/>
+       
+     <bean name="administrateur" class="com.treluxcom.metier.Administrateur"></bean> <!--Bean Administrateur-->     
+     <bean name="boutique" class="com.treluxcom.metier.Boutique"></bean> <!--Bean Boutique-->     
+     <bean name="caissier" class="com.treluxcom.metier.Caissier"></bean> <!--Bean Caissier-->     
+     <bean name="calendrierservice" class="com.treluxcom.metier.Calendrierservice"></bean> <!--Bean Calendrierservice-->     
+     <bean name="calendrierserviceid" class="com.treluxcom.metier.CalendrierserviceId"></bean> <!--Bean CalendrierserviceId--> 
+     <bean name="client" class="com.treluxcom.metier.Client"></bean> <!--Bean Client-->
+     <bean name="commande" class="com.treluxcom.metier.Commande"></bean> <!--Bean Commande-->
+     <bean name="couloir" class="com.treluxcom.metier.Couloir"></bean> <!--Bean Couloir-->
+
+     <bean name="devis" class="com.treluxcom.metier.Devis"></bean> <!--Bean Devis-->
+     <bean name="employe" class="com.treluxcom.metier.Employe"></bean> <!--Bean Employer-->
+     <bean name="etagere" class="com.treluxcom.metier.Etagere"></bean> <!--Bean Etagere-->
+     <bean name="famille" class="com.treluxcom.metier.Famille"></bean> <!--Bean Famille-->
+     
+     <bean name="stock" class="com.treluxcom.metier.Stock"></bean><!-- Bean Stock-->
+     <bean name="ressourcemedia" class="com.treluxcom.metier.Ressourcemedia"></bean><!-- Bean Ressourcemedia-->
+     <bean name="produit" class="com.treluxcom.metier.Produit"></bean><!-- Bean Produit-->
+     <bean name="privilege" class="com.treluxcom.metier.Privilege"></bean><!-- Bean Privilege-->
+
+     <bean name="personne" class="com.treluxcom.metier.Personne"></bean><!-- Bean Personne-->
+     <bean name="panierclient" class="com.treluxcom.metier.Panierclient"></bean><!-- Bean Panierclient-->
+     <bean name="paniercaissier" class="com.treluxcom.metier.Paniercaissier"></bean><!-- Bean Paniercaissier-->
+     <bean name="panier" class="com.treluxcom.metier.Panier"></bean><!-- Bean Panier-->
+     
+     
+     <bean name="message" class="com.treluxcom.metier.Message"></bean><!-- Bean Message-->
+     <bean name="livreur" class="com.treluxcom.metier.Livreur"></bean><!-- Bean Livreur-->
+     <bean name="livraison" class="com.treluxcom.metier.Livraison"></bean><!-- Bean Livraison-->
+     <bean name="lignedevisId" class="com.treluxcom.metier.LignedevisId"></bean><!-- Bean LignedevisId-->
+     <bean name="lignedevis" class="com.treluxcom.metier.Lignedevis"></bean><!-- Bean Lignedevis-->
+     <bean name="lignecommandeId" class="com.treluxcom.metier.LignecommandeId"></bean><!-- Bean LignecommandeId-->
+     <bean name="lignecommande" class="com.treluxcom.metier.Lignecommande"></bean><!-- Bean Lignecommande-->
+     <bean name="jour" class="com.treluxcom.metier.Jour"></bean><!-- Bean Jour-->
+     <bean name="groupe" class="com.treluxcom.metier.Groupe"></bean><!-- Bean Groupe-->
+     <bean name="gerant" class="com.treluxcom.metier.Gerant"></bean><!-- Bean Gerant-->
+     <bean name="fournisseur" class="com.treluxcom.metier.Fournisseur"></bean><!-- Bean Fournisseur-->
+     <bean name="generatecode" class="com.treluxcom.utilitaire.GenerateCode"></bean><!-- Bean GenerateCode-->
+     <bean name="windowmanager" class="com.treluxcom.utilitaire.WindowManager"></bean><!-- Bean WindowManager-->
+     <bean name="filemanager" class="com.treluxcom.utilitaire.FileManager"></bean><!-- Bean FileManager-->
+     
+     
+</beans>

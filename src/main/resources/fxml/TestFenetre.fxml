@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.TestFenetreController">
+   <children>
+      <VBox layoutX="15.0" layoutY="13.0" prefHeight="537.0" prefWidth="737.0">
+         <children>
+            <HBox prefHeight="52.0" prefWidth="721.0">
+               <children>
+                  <JFXButton onAction="#btnMainAdmin" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: red;" text="MainAdmin">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnMainGerant" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: red;" text="MainGerant">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnMainCaissier" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: red;" text="MainCaissier">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnMainLivreur" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: red;" text="MainLivreur">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnMainFournisseur" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: red;" text="MainFournisseur">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="721.0">
+               <children>
+                  <JFXButton onAction="#btnConnexion" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="Connexion">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnFormulaireClient" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="FormulaireClient">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnCalendrier" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="CalendrierService">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnStatistique" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="Statistique">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnEnregCommande" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="Enreg.Commande">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="52.0" prefWidth="721.0">
+               <children>
+                  <JFXButton onAction="#btnMesEmployes" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="Mes Employes">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnMesBoutiques" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="Mes Boutiques">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnFamilleBoisson" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="Famille Boisson">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#btnListeCommande" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="Main">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: skyblue;" text="Main">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#close" prefHeight="54.0" prefWidth="708.0" style="-fx-background-color: lime;" text="Quitter">
+               <VBox.margin>
+                  <Insets left="10.0" top="350.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

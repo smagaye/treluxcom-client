@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<JFXTabPane fx:id="tabpane" prefHeight="669.0" prefWidth="1166.0" stylesheets="@../styles/administrateur.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.MainFournisseurController">
+    <tabs>
+        <Tab style="-fx-background-color: white;">
+            <fx:include source="StatistiqueFournisseur.fxml" />
+            <graphic>
+                <ImageView fitHeight="47.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/home.jpg" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Tab>
+        <Tab style="-fx-background-color: #006064;" text="Commandes">
+         <content>
+            <AnchorPane prefHeight="619.0" prefWidth="1214.0" style="-fx-background-color: #006064;">
+               <children>
+                  <ScrollPane layoutX="38.0" layoutY="106.0" prefHeight="313.0" prefWidth="329.0" style="-fx-background-color: #006064;">
+                    <content>
+                        <VBox fx:id="vboxPrev" style="-fx-background-color: #006064;" />
+                    </content>
+                  </ScrollPane>
+                  <ScrollPane layoutX="397.0" layoutY="51.0" prefHeight="520.0" prefWidth="614.0">
+                     <content>
+                        <VBox fx:id="vboxCom" />
+                     </content>
+                  </ScrollPane>
+                  <JFXButton layoutX="1023.0" layoutY="310.0" mnemonicParsing="false" onAction="#btnFaireDevis" prefHeight="41.0" prefWidth="129.0" style="-fx-background-color: #80cbc4;" text="Faire un devis" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></JFXButton>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="396.0" layoutY="14.0" prefHeight="42.0" prefWidth="615.0" style="-fx-background-color: #00695c;" text="Demande de devis " textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <effect>
+                        <DropShadow color="WHITE" height="37.31" radius="22.2325" width="53.62" />
+                     </effect>
+                  </Label>
+                  <JFXButton layoutX="138.0" layoutY="439.0" mnemonicParsing="false" onAction="#btncharger" prefHeight="42.0" prefWidth="159.0" style="-fx-background-color: #80cbc4;" text="Raffraichir" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/refresh.jpeg" />
+                           </image></ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </content>
+        </Tab>
+    </tabs>
+</JFXTabPane>

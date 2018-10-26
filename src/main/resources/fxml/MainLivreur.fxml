@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="body" fx:id="parent" prefHeight="518.0" prefWidth="804.0" stylesheets="@../styles/mainlivreur.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.MainLivreurController">
+   <children>
+      <ScrollPane fx:id="scrollPaneLivreur" layoutX="-4.0" layoutY="-2.0" prefHeight="518.0" prefWidth="288.0" style="-fx-background-color: red;" styleClass="scrollPaneLivreur" stylesheets="@../styles/mainlivreur.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox fx:id="vboxClient" prefHeight="585.0" prefWidth="275.0" style="-fx-background-color: #f48fb1 #f48fb1;" stylesheets="@../styles/mainlivreur.css">
+               <children>
+                  <AnchorPane prefHeight="84.0" prefWidth="214.0" style="-fx-background-color: #f06292; -fx-border-color: #006064; -fx-border-bottom-width: 2px;">
+                     <children>
+                        <Label layoutX="77.0" layoutY="44.0" prefHeight="20.0" prefWidth="177.0" text="Gaye" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="79.0" layoutY="6.0" prefHeight="20.0" prefWidth="188.0" text="PAN20180511234512343" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="25.0" prefHeight="20.0" prefWidth="195.0" text="Adama" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane id="profil" layoutY="-4.0" prefHeight="89.0" prefWidth="69.0" stylesheets="@../styles/mainlivreur.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#eb6da8" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="84.0" prefWidth="214.0" style="-fx-background-color: #f06292; -fx-border-color: #006064; -fx-border-bottom-width: 2px;">
+                     <children>
+                        <Label layoutX="77.0" layoutY="44.0" prefHeight="20.0" prefWidth="177.0" text="Gaye" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="79.0" layoutY="6.0" prefHeight="20.0" prefWidth="188.0" text="PAN20180511234512343" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="25.0" prefHeight="20.0" prefWidth="195.0" text="Adama" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane id="profil" layoutY="-4.0" prefHeight="89.0" prefWidth="69.0" stylesheets="@../styles/mainlivreur.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#eb6da8" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="94.0" prefHeight="84.0" prefWidth="214.0" style="-fx-background-color: #f06292; -fx-border-color: #006064; -fx-border-bottom-width: 2px;">
+                     <children>
+                        <Label layoutX="77.0" layoutY="44.0" prefHeight="20.0" prefWidth="177.0" text="Gaye" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="79.0" layoutY="6.0" prefHeight="20.0" prefWidth="188.0" text="PAN20180511234512343" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="25.0" prefHeight="20.0" prefWidth="195.0" text="Adama" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane id="profil" layoutY="-4.0" prefHeight="89.0" prefWidth="69.0" stylesheets="@../styles/mainlivreur.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#eb6da8" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="178.0" prefHeight="84.0" prefWidth="214.0" style="-fx-background-color: #f06292; -fx-border-color: #006064; -fx-border-bottom-width: 2px;">
+                     <children>
+                        <Label layoutX="77.0" layoutY="44.0" prefHeight="20.0" prefWidth="177.0" text="Gaye" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="79.0" layoutY="6.0" prefHeight="20.0" prefWidth="188.0" text="PAN20180511234512343" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="25.0" prefHeight="20.0" prefWidth="195.0" text="Adama" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane id="profil" layoutY="-4.0" prefHeight="89.0" prefWidth="69.0" stylesheets="@../styles/mainlivreur.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#eb6da8" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="262.0" prefHeight="84.0" prefWidth="214.0" style="-fx-background-color: #f06292; -fx-border-color: #006064; -fx-border-bottom-width: 2px;">
+                     <children>
+                        <Label layoutX="77.0" layoutY="44.0" prefHeight="20.0" prefWidth="177.0" text="Gaye" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="79.0" layoutY="6.0" prefHeight="20.0" prefWidth="188.0" text="PAN20180511234512343" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="25.0" prefHeight="20.0" prefWidth="195.0" text="Adama" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane id="profil" layoutY="-4.0" prefHeight="89.0" prefWidth="69.0" stylesheets="@../styles/mainlivreur.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#eb6da8" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="346.0" prefHeight="84.0" prefWidth="214.0" style="-fx-background-color: #f06292; -fx-border-color: #006064; -fx-border-bottom-width: 2px;">
+                     <children>
+                        <Label layoutX="77.0" layoutY="44.0" prefHeight="20.0" prefWidth="177.0" text="Gaye" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="79.0" layoutY="6.0" prefHeight="20.0" prefWidth="188.0" text="PAN20180511234512343" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="25.0" prefHeight="20.0" prefWidth="195.0" text="Adama" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane id="profil" layoutY="-4.0" prefHeight="89.0" prefWidth="69.0" stylesheets="@../styles/mainlivreur.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#eb6da8" />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="430.0" prefHeight="84.0" prefWidth="214.0" style="-fx-background-color: #f06292; -fx-border-color: #006064; -fx-border-bottom-width: 2px;">
+                     <children>
+                        <Label layoutX="77.0" layoutY="44.0" prefHeight="20.0" prefWidth="177.0" text="Gaye" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="79.0" layoutY="6.0" prefHeight="20.0" prefWidth="188.0" text="PAN20180511234512343" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="25.0" prefHeight="20.0" prefWidth="195.0" text="Adama" textFill="#220505">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane id="profil" layoutY="-4.0" prefHeight="89.0" prefWidth="69.0" stylesheets="@../styles/mainlivreur.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#eb6da8" />
+                     </effect>
+                  </AnchorPane>
+               </children></VBox>
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutX="302.0" layoutY="85.0" opacity="0.86" prefHeight="349.0" prefWidth="488.0" style="-fx-background-color: white; -fx-background-color: black; -fx-border-radius: 80;">
+         <children>
+            <JFXButton layoutX="51.0" layoutY="295.0" onAction="#btnAnnuler" prefHeight="35.0" prefWidth="155.0" text="Annuler" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icone/delete-file-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="222.0" layoutY="295.0" onAction="#btnLivrer" prefHeight="35.0" prefWidth="155.0" style="-fx-background-color: green;" text="Livrer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icone/Edit-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="161.0" prefHeight="35.0" prefWidth="155.0" text="Livraison" textFill="#e84e4e" underline="true">
+               <font>
+                  <Font name="System Italic" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="411.0" layoutY="141.0" onAction="#btnFacture" prefHeight="46.0" prefWidth="70.0" style="-fx-background-color: orange;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/fact.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <VBox layoutX="14.0" layoutY="43.0" prefHeight="241.0" prefWidth="388.0">
+               <children>
+                  <HBox prefHeight="37.0" prefWidth="219.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="162.0" style="-fx-background-color: #ff4081 #ff4081;" text="Prenom : " textFill="#141401">
+                           <padding>
+                              <Insets left="65.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="prenom" prefHeight="28.0" prefWidth="244.0" style="-fx-background-color: #ff4081 #ff4081;" text="Serigne Malick Ada" textFill="#1e0404" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="219.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="165.0" style="-fx-background-color: #ff4081 #ff4081;" text="Nom :" textFill="#141401" wrapText="true">
+                           <padding>
+                              <Insets left="83.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="nom" prefHeight="28.0" prefWidth="241.0" style="-fx-background-color: #ff4081 #ff4081;" text="GAYE" textFill="#1e0404" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="47.0" prefHeight="37.0" prefWidth="219.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="167.0" style="-fx-background-color: #ff4081 #ff4081;" text="Adresse : " textFill="#141401">
+                           <padding>
+                              <Insets left="65.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="adresse" prefHeight="28.0" prefWidth="258.0" style="-fx-background-color: #ff4081 #ff4081;" text="114 , Zone de Captage" textFill="#1e0404">
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="84.0" prefHeight="37.0" prefWidth="219.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="153.0" style="-fx-background-color: #ff4081 #ff4081;" text="Telephone : " textFill="#141401">
+                           <padding>
+                              <Insets left="53.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="telephone" prefHeight="28.0" prefWidth="235.0" style="-fx-background-color: #ff4081 #ff4081;" text="+221772979863" textFill="#1e0404" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="121.0" prefHeight="37.0" prefWidth="219.0">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="173.0" style="-fx-background-color: #ff4081 #ff4081;" text="Nombre de produits commandees :" textAlignment="RIGHT" textFill="#141401" wrapText="true">
+                           <padding>
+                              <Insets right="11.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="nombreProduit" prefHeight="40.0" prefWidth="255.0" style="-fx-background-color: #ff4081 #ff4081;" text="8" textFill="#1e0404" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="158.0" prefHeight="37.0" prefWidth="219.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="161.0" style="-fx-background-color: #ff4081 #ff4081;" text="Montant :" textAlignment="CENTER" textFill="#141401" wrapText="true">
+                           <padding>
+                              <Insets left="65.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="montant" prefHeight="35.0" prefWidth="256.0" style="-fx-background-color: #ff4081 #ff4081;" text="279000 CFA" textFill="#1e0404" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Label layoutX="718.0" layoutY="5.0" onMouseClicked="#btnExit" prefHeight="30.0" prefWidth="19.0" text="X" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

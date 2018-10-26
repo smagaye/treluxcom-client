@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="176.0" prefWidth="579.0" style="-fx-background-color: #03a9f4#03a9f4;" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="161.0" layoutY="7.0" prefHeight="17.0" prefWidth="148.0" text="12-Mars-1994" />
+      <Label layoutX="119.0" layoutY="36.0" prefHeight="17.0" prefWidth="242.0" text="Serigne Mouhamadou Bassirou Diaby" />
+      <Label layoutX="178.0" layoutY="64.0" prefHeight="17.0" prefWidth="250.0" text="Serigne Malick Ada Gaye" />
+      <Label layoutX="233.0" layoutY="95.0" prefHeight="17.0" prefWidth="27.0" text="123" />
+      <Label layoutX="234.0" layoutY="128.0" prefHeight="17.0" prefWidth="27.0" text="123" />
+      <JFXButton buttonType="RAISED" layoutX="416.0" layoutY="30.0" prefHeight="46.0" prefWidth="148.0" style="-fx-background-color: green;" text="Valider Achat Stock" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icone/acheter.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="416.0" layoutY="83.0" prefHeight="46.0" prefWidth="148.0" style="-fx-background-color: red;" text="      Annuler    " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icone/fermer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </JFXButton>
+      <Label layoutX="22.0" layoutY="6.0" prefHeight="17.0" prefWidth="140.0" text="Commande passe le :" textFill="WHITE" underline="true" />
+      <Label layoutX="22.0" layoutY="36.0" prefHeight="17.0" prefWidth="91.0" text="Par le gerant :" textFill="WHITE" underline="true" />
+      <Label layoutX="21.0" layoutY="64.0" prefHeight="17.0" prefWidth="148.0" text="Aupres du fournisseur :" textFill="WHITE" underline="true" />
+      <Label layoutX="21.0" layoutY="95.0" prefHeight="17.0" prefWidth="214.0" text="Nombre de produits commandes :" textFill="WHITE" underline="true" />
+      <Label layoutX="21.0" layoutY="128.0" prefHeight="17.0" prefWidth="197.0" text="Nombre de produits disponible:" textFill="WHITE" underline="true" />
+      <Pane layoutX="3.0" layoutY="171.0" prefHeight="6.0" prefWidth="584.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

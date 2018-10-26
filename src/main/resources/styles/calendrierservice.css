@@ -1,0 +1,7 @@
+.root{   
+    -fx-background-image:  url("../images/planning.jpg");
+    -fx-background-size:cover;
+        -fx-background-repeat:   no-repeat;
+}
+
+

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="805.0" style="-fx-background-color: #004d40;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.EnregistrerCommandeController">
+    <children>
+        <Pane layoutX="30.0" layoutY="397.0" prefHeight="246.0" prefWidth="737.0" style="-fx-background-color: #00695c;">
+            <children>
+                <JFXButton layoutX="387.0" layoutY="199.0" mnemonicParsing="false" onAction="#btnModifier" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #b3ffe2; -fx-border-radius: 10px;" text="Modifier" textFill="#259769">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icone/editIcon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <TextField fx:id="categorie" layoutX="538.0" layoutY="36.0" prefHeight="27.0" prefWidth="185.0" />
+                <Label layoutX="405.0" layoutY="40.0" prefHeight="17.0" prefWidth="104.0" text="Catégorie" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="34.0" layoutY="37.0" prefHeight="17.0" prefWidth="104.0" text="Fournisseur" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="famille" layoutX="146.0" layoutY="198.0" prefHeight="25.0" prefWidth="176.0" visible="false" />
+                <Label layoutX="54.0" layoutY="201.0" prefHeight="27.0" prefWidth="64.0" text="Famille" textFill="WHITE" visible="false">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="30.0" fitWidth="46.0" layoutX="317.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                    <image>
+                        <Image url="@../icone/plusIcon1.png" />
+                    </image>
+                </ImageView>
+                <DatePicker fx:id="dateReception" layoutX="541.0" layoutY="91.0" prefHeight="27.0" prefWidth="185.0" />
+                <DatePicker fx:id="dateExpiration" layoutX="542.0" layoutY="147.0" prefHeight="27.0" prefWidth="185.0" />
+                <TextField fx:id="tarifGerant" layoutX="147.0" layoutY="90.0" onKeyReleased="#tarifGerantEvent" prefHeight="27.0" prefWidth="225.0" />
+                <Label layoutX="401.0" layoutY="91.0" prefHeight="20.0" prefWidth="133.0" text="Date Reception" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="25.0" layoutY="90.0" prefHeight="27.0" prefWidth="110.0" text="Tarif Gérant" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="401.0" layoutY="147.0" prefHeight="20.0" prefWidth="133.0" text="Date Expiration" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="239.0" layoutY="199.0" mnemonicParsing="false" onAction="#btnAnnuler" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #ff9e84; -fx-border-radius: 10px;" text="Annuler" textFill="#970f0f">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icone/delete-file-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+            <TextField fx:id="fournisseur" editable="false" layoutX="146.0" layoutY="37.0" prefHeight="27.0" prefWidth="225.0" />
+            <TextField fx:id="benefice" editable="false" layoutX="146.0" layoutY="149.0" prefHeight="27.0" prefWidth="160.0" />
+            <Label fx:id="balance" layoutX="48.0" layoutY="150.0" prefHeight="27.0" prefWidth="80.0" text="Benefice" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            </children>
+
+        </Pane>
+        <Separator prefHeight="13.0" prefWidth="1137.0" />
+        <JFXTreeTableView fx:id="tableLigneCommande" layoutX="36.0" layoutY="55.0" prefHeight="330.0" prefWidth="731.0">
+            <columns>
+            </columns>
+            <effect>
+                <DropShadow color="WHITE" radius="10.74" width="23.96" />
+            </effect>
+        </JFXTreeTableView>
+        <JFXButton layoutX="777.0" layoutY="613.0" mnemonicParsing="false" onAction="#btnEnregistrerStock" prefHeight="27.0" prefWidth="284.0" style="-fx-background-color: #94f4b6;" text="Enregistrer le Stock" textFill="#063c31">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+            <padding>
+                <Insets left="10.0" />
+            </padding>
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../icone/Save-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+          <Label layoutX="43.0" layoutY="20.0" prefHeight="20.0" prefWidth="110.0" text="Commande" textFill="WHITE">
+              <font>
+                  <Font name="System Bold" size="16.0" />
+              </font>
+          </Label>
+          <ComboBox fx:id="commande" layoutX="168.0" layoutY="16.0" onAction="#comboCommandeEvent" prefHeight="27.0" prefWidth="222.0" />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="402.0" layoutY="15.0" mnemonicParsing="false" onAction="#refreshCommande" prefHeight="27.0" prefWidth="44.0" style="-fx-background-color: white; -fx-border-radius: 10px;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/refresh.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Pane fx:id="aucunElementSelect" depthTest="ENABLE" layoutX="779.0" layoutY="51.0" prefHeight="338.0" prefWidth="283.0" style="-fx-background-color: white; -fx-border-width: 2px;">
+         <children>
+            <ImageView fitHeight="158.0" fitWidth="168.0" layoutX="59.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icone/vide.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="192.0" prefHeight="79.0" prefWidth="235.0" text="Aucun élément du tableau sélectionné" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="185.0" fitWidth="282.0" layoutX="777.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/trelux29.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="paneVisualisation" layoutX="777.0" layoutY="51.0" prefHeight="338.0" prefWidth="286.0" style="-fx-background-color: #26a69a;" visible="false">
+         <effect>
+            <DropShadow radius="9.2575" width="18.03" />
+         </effect>
+         <children>
+            <VBox layoutX="16.0" layoutY="14.0" prefHeight="308.0" prefWidth="261.0">
+               <children>
+                  <Label fx:id="lbNomFamille" prefHeight="30.0" prefWidth="208.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="photoFamille" fitHeight="146.0" fitWidth="247.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label fx:id="lbSucree" prefHeight="22.0" prefWidth="104.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbAlcoolisee" prefHeight="22.0" prefWidth="114.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbNaturelle" prefHeight="22.0" prefWidth="113.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbFormat" prefHeight="22.0" prefWidth="128.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbSaveur" prefHeight="22.0" prefWidth="142.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbMinerale" prefHeight="22.0" prefWidth="128.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="lbGazeuse" prefHeight="22.0" prefWidth="149.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+        <TitledPane fx:id="paneStock" expanded="false" layoutX="776.0" layoutY="397.0" prefHeight="214.0" prefWidth="284.0" text="Stock" textFill="#0e754a">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="190.0" prefWidth="281.0">
+                    <children>
+                        <Label layoutX="22.0" layoutY="5.0" prefHeight="19.0" prefWidth="114.0" text="Reférence Stock : ">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="3.0" layoutY="35.0" prefHeight="19.0" prefWidth="142.0" text="Date création Stock :">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="referenceStock" layoutX="135.0" layoutY="6.0" prefHeight="17.0" prefWidth="142.0">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="71.0" prefHeight="19.0" prefWidth="107.0" text="Quantité Totale :">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="quantiteTotal" layoutX="135.0" layoutY="70.0" prefHeight="21.0" prefWidth="112.0">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="nomBoutique" layoutX="132.0" layoutY="130.0" prefHeight="22.0" prefWidth="146.0" wrapText="true">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="132.0" prefHeight="17.0" prefWidth="75.0" text="Boutique : ">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="dateCreationStock" layoutX="136.0" layoutY="36.0" prefHeight="17.0" prefWidth="118.0">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="81.0" layoutY="104.0" prefHeight="17.0" prefWidth="61.0" text="Auteur :">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="auteur" layoutX="135.0" layoutY="103.0" prefHeight="21.0" prefWidth="140.0">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </TitledPane>
+    </children>
+</AnchorPane>

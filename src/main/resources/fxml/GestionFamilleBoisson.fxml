@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="gestionFamille" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: blue;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.treluxcom.controlleur.GestionFamilleBoissonController">
+         <children>
+            <Pane fx:id="ajoutFamille" layoutX="97.0" layoutY="27.0" prefHeight="618.0" prefWidth="315.0" style="-fx-background-color: #1e88e5;">
+               <children>
+                  <JFXToggleButton fx:id="minerale" contentDisplay="RIGHT" layoutX="10.0" layoutY="314.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="141.0" selected="true" text="Minérale" textFill="WHITE" toggleColor="#0db58b" toggleLineColor="#9fffb9" unToggleColor="#e40f0f" unToggleLineColor="#ffa5a5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXToggleButton>
+                  <JFXToggleButton fx:id="gazeuse" contentDisplay="RIGHT" layoutX="168.0" layoutY="208.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="140.0" text="Gazeuse" textFill="WHITE" toggleColor="#0db58b" toggleLineColor="#9fffb9" unToggleColor="#e40f0f" unToggleLineColor="#ffa5a5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXToggleButton>
+                  <JFXToggleButton fx:id="naturelle" contentDisplay="RIGHT" layoutX="2.0" layoutY="262.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="143.0" text="Naturelle" textFill="WHITE" toggleColor="#0db58b" toggleLineColor="#9fffb9" unToggleColor="#e40f0f" unToggleLineColor="#ffa5a5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXToggleButton>
+                  <JFXToggleButton fx:id="sucree" contentDisplay="RIGHT" layoutX="8.0" layoutY="212.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="147.0" selected="true" text="Sucrée" textFill="WHITE" toggleColor="#0db58b" toggleLineColor="#9fffb9" unToggleColor="#e40f0f" unToggleLineColor="#ffa5a5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXToggleButton>
+                  <JFXToggleButton fx:id="alcoolisee" contentDisplay="RIGHT" layoutX="162.0" layoutY="262.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="151.0" text="Alcoolisée" textFill="WHITE" toggleColor="#0db58b" toggleLineColor="#9fffb9" unToggleColor="#e40f0f" unToggleLineColor="#ffa5a5">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXToggleButton>
+                  <TextField fx:id="format" layoutX="119.0" layoutY="71.0" prefHeight="25.0" prefWidth="45.0" />
+                  <TextField fx:id="degreAlcool" layoutX="119.0" layoutY="124.0" prefHeight="25.0" prefWidth="57.0" text="0" />
+                  <ComboBox fx:id="saveur" layoutX="118.0" layoutY="177.0" prefHeight="25.0" prefWidth="167.0" />
+                  <Label layoutX="38.0" layoutY="73.0" prefHeight="21.0" prefWidth="64.0" text="Format" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="2.0" layoutY="126.0" prefHeight="21.0" prefWidth="117.0" text="Degré d'alcool" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="179.0" prefHeight="21.0" prefWidth="64.0" text="Saveur" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="165.0" layoutY="332.0" mnemonicParsing="false" onAction="#chargerPhoto" prefHeight="33.0" prefWidth="127.0" style="-fx-background-color: #dafdff;" text="Charger Photo" textFill="#022a2c">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/photo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="80.0" layoutY="555.0" mnemonicParsing="false" onAction="#btnEnregistrerFamille" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: white;" text="Enregistrer" textFill="#0d3d79">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/Save-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+                  </JFXButton>
+                  <TextArea fx:id="description" layoutX="23.0" layoutY="392.0" prefHeight="131.0" prefWidth="269.0" promptText="Description" />
+            <TextField fx:id="nomFamille" layoutX="121.0" layoutY="29.0" prefHeight="25.0" prefWidth="167.0" />
+            <Label layoutX="51.0" layoutY="31.0" prefHeight="21.0" prefWidth="45.0" text="Nom" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="73.0" prefHeight="21.0" prefWidth="45.0" text="Unité" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="unite" layoutX="222.0" layoutY="71.0" prefHeight="25.0" prefWidth="64.0" />
+               </children>
+               <effect>
+                  <DropShadow height="130.71" radius="74.4925" width="169.26" />
+               </effect>
+            </Pane>
+            <JFXTreeTableView fx:id="tableFamille" layoutX="432.0" layoutY="80.0" prefHeight="408.0" prefWidth="676.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Editer" />
+                  <MenuItem mnemonicParsing="false" onAction="#mnSupprimer" text="Supprimer" />
+              </items>
+            </ContextMenu>
+         </contextMenu></JFXTreeTableView>
+            <JFXTextField fx:id="recherche" focusColor="WHITE" labelFloat="true" layoutX="850.0" layoutY="36.0" prefHeight="25.0" prefWidth="258.0" promptText="Recherche ..." style="-fx-text-fill: #ffffff;" styleClass="search" stylesheets="@../styles/administrateur.css" unFocusColor="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#4dbeea" radius="10.7425" width="23.97" />
+               </effect>
+            </JFXTextField>
+            <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="1085.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icone/search.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="paneVisualisation" layoutX="432.0" layoutY="497.0" prefHeight="145.0" prefWidth="677.0" style="-fx-background-color: #1e88e5;" visible="false">
+               <effect>
+                  <DropShadow radius="9.2575" width="18.03" />
+               </effect>
+               <children>
+                  <ImageView fx:id="photoFamille" fitHeight="131.0" fitWidth="167.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="lbSucree" layoutX="256.0" layoutY="36.0" prefHeight="22.0" prefWidth="104.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbNomFamille" layoutX="238.0" layoutY="6.0" prefHeight="30.0" prefWidth="403.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="619.0" layoutY="107.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="45.0" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icone/editIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="lbNaturelle" layoutX="256.0" layoutY="79.0" prefHeight="22.0" prefWidth="113.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbFormat" layoutX="539.0" layoutY="37.0" prefHeight="22.0" prefWidth="128.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbAlcoolisee" layoutX="256.0" layoutY="57.0" prefHeight="22.0" prefWidth="114.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="375.0" layoutY="36.0" orientation="VERTICAL" prefHeight="67.0" prefWidth="10.0" />
+                  <Label fx:id="lbGazeuse" layoutX="397.0" layoutY="37.0" prefHeight="22.0" prefWidth="149.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbSaveur" layoutX="397.0" layoutY="58.0" prefHeight="22.0" prefWidth="142.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbDescription" layoutX="255.0" layoutY="101.0" prefHeight="43.0" prefWidth="328.0" textFill="WHITE" wrapText="true">
+                     <effect>
+                        <DropShadow height="32.86" radius="18.155" width="41.76" />
+                     </effect>
+                     <font>
+                        <Font name="Bookman Old Style Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+            <Separator layoutX="522.0" layoutY="35.0" orientation="VERTICAL" prefHeight="67.0" prefWidth="10.0" />
+            <Label fx:id="lbMinerale" layoutX="397.0" layoutY="79.0" prefHeight="22.0" prefWidth="128.0" textFill="WHITE" wrapText="true">
+               <effect>
+                  <DropShadow height="32.86" radius="18.155" width="41.76" />
+               </effect>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbDegreAlcool" layoutX="539.0" layoutY="65.0" prefHeight="22.0" prefWidth="140.0" textFill="WHITE" wrapText="true">
+               <effect>
+                  <DropShadow height="32.86" radius="18.155" width="41.76" />
+               </effect>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+               </children>
+            </Pane>
+            <Label layoutX="432.0" layoutY="27.0" prefHeight="42.0" prefWidth="341.0" style="-fx-background-color: #1e88e5;" text="Liste des Familles de Boissons" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <effect>
+                  <DropShadow radius="18.155" width="53.62" />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>

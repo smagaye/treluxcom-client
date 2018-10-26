@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="76.0" prefWidth="324.0" style="-fx-background-color: green; -fx-border-color: #006064; -fx-border-bottom-width: 2px;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="82.0" layoutY="28.0" prefHeight="20.0" prefWidth="105.0" text="16-05-2018" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="50.0" prefHeight="20.0" prefWidth="93.0" text="Non traitée" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="243.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="38.0" style="-fx-background-color: lime;" styleClass="round-lbl" text="1000" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="6.0" prefHeight="20.0" prefWidth="135.0" text="Commande reçu " textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="28.0" prefHeight="20.0" prefWidth="14.0" text="le" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="50.0" prefHeight="20.0" prefWidth="44.0" text="Etat :" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="7.0" prefHeight="38.0" prefWidth="74.0" text="Nombre de produits " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Circle fill="#fc0707" layoutX="33.0" layoutY="35.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+      <Separator layoutX="201.0" layoutY="5.0" orientation="VERTICAL" prefHeight="66.0" prefWidth="2.0" />
+   </children>
+   <effect>
+      <DropShadow color="#27ffac" />
+   </effect>
+</Pane>

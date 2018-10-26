@@ -1,0 +1,38 @@
+#body{
+    -fx-background-image:url("../images/trelux42.jpg");  
+    -fx-background-size:     cover;                     
+    -fx-background-repeat:   no-repeat;
+}
+
+#profil{
+    -fx-background-image:url("../images/prof.jpeg");  
+    -fx-background-size:     cover;                     
+    -fx-background-repeat:   no-repeat;
+}
+
+/*  Scroball Customer   */
+
+.scrollPaneLivreur .increment-button ,.scrollPaneLivreur .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.scrollPaneLivreur .scroll-bar:horizontal .track,
+.scrollPaneLivreur .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive(pink,80%);
+
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.scrollPaneLivreur .scroll-bar:horizontal .thumb,
+.scrollPaneLivreur .scroll-bar:vertical .thumb {
+    -fx-background-color:#ff4081;
+    /*-fx-background-insets: 2, 0, 0;*/
+    -fx-background-radius: 2em;
+
+}
